@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Form MUA</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:40px;
+}
+
+.form-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:100px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:25px;
+    border:none;
+    background:#25D366;
+    color:white;
+    font-size:18px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1ebc59;
+}
+</style>
+
+</head>
+<body>
+
+<div class="form-box">
+
+<h2>BOOKING FORM MUA</h2>
+
+<form id="bookingForm">
+
+<label>1. Nama MUA:</label>
+<input type="text" name="nama_mua">
+
+<label>2. Nama Client:</label>
+<input type="text" name="nama_client">
+
+<label>3. Nomor WA:</label>
+<input type="text" name="nomor_wa">
+
+<label>4. Hari / Tanggal:</label>
+<input type="date" name="tanggal">
+
+<label>5. Alamat Lokasi:</label>
+<textarea name="alamat"></textarea>
+
+<label>6. Jam Booking:</label>
+<input type="time" name="jam_booking">
+
+<label>7. Jenis Acara:</label>
+<input type="text" name="jenis_acara">
+
+<label>8. Total Pax:</label>
+<input type="number" name="total_pax">
+
+<label>9. Retouch / No Retouch:</label>
+<select name="retouch">
+<option>Retouch</option>
+<option>No Retouch</option>
+</select>
+
+<label>10. Di Atas 45 Tahun:</label>
+<select name="usia_45">
+<option>Ya</option>
+<option>Tidak</option>
+</select>
+
+<label>11. Request Model Rambut:</label>
+<input type="text" name="model_rambut">
+
+<label>12. Status DP:</label>
+<input type="text" name="status_dp">
+
+<label>13. Catatan Tambahan:</label>
+<textarea name="catatan"></textarea>
+
+<button type="submit">
+KIRIM BOOKING
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
